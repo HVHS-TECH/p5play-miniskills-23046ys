@@ -9,7 +9,10 @@
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
-
+	cnv = new Canvas(windowWidth, windowHeight);
+	sprit = new Sprite(x,y,w,h,'d');
+	sprit.color = 'ccc';
+	
 }
 	
 /*******************************************************/
