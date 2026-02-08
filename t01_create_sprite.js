@@ -13,6 +13,7 @@ function setup() {
 	sprit = new Sprite(x,y,w,h,'d');
 	sprit.color = 'ccc';
 	
+
 }
 	
 /*******************************************************/
