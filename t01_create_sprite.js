@@ -10,9 +10,9 @@
 function setup() {
 	console.log("setup: ");
 	cnv = new Canvas(windowWidth, windowHeight);
-	sprit = new Sprite(x,y,w,h,'d');
+	sprit = new Sprite(50px,100px,10px,10px,'d');
 	sprit.color = 'ccc';
-	
+
 
 }
 	
