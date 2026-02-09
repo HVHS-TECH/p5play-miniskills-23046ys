@@ -10,8 +10,10 @@
 function setup() {
 	console.log("setup: ");
 	cnv = new Canvas(windowWidth, windowHeight);
-	sprit = new Sprite(50px,100px,10px,10px,'d');
-	sprit.color = 'ccc';
+	rec = new Sprite(50,100,100,50);
+	rec.color = 'ccc';
+	circle = new Sprite(100,100,20)
+	circle.color ='ccc';
 
 
 }
@@ -20,7 +22,7 @@ function setup() {
 // draw()
 /*******************************************************/
 function draw() {
-	
+	background('ccc');
 }
 
 /*******************************************************/

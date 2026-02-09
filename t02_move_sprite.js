@@ -9,14 +9,19 @@
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
-
+	cnv = new Canvas(windowWidth, windowHeight);
+	rec = new Sprite(50,100,100,50, 'd');
+	rec.color = 'ccc';
+	rec.rotationSpeed = 2;
+	rec.vel.x = 3;
+	rec.vel.y = 4;
 }
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-	
+	background('ccc');
 }
 
 /*******************************************************/
