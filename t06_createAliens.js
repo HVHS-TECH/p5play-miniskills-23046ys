@@ -12,6 +12,12 @@ function setup() {
 	cnv = new Canvas(windowWidth, windowHeight-100);
 	world.gravity.y = 10;
 
+	const VELARRAY = [-1,1]
+
+	randNum= random(6, 8) * random(VELARRAY)
+	
+	randCoord= random(50,900)
+
 	rec = new Sprite(width/2,height/2,50, 'd');
 	rec.color = '#007bff';
 	rec.rotationSpeed = 2;
@@ -27,13 +33,15 @@ function setup() {
 }
 
 function makeAliens(){
-	for (count = 20; count < 100; count++) {
+	for (count = 0; count < 100; count++) {
+	
+	
 
-  alien = new Sprite(50,50,10,10, 'd');
+  alien = new Sprite(randCoord,randCoord,10,10, 'd');
 
-  alien.vel.x = 3;
+  alien.vel.x = randNum;
 
-  alien.vel.y = 4;
+  alien.vel.y = randNum;
 
   alien.bounciness = 1;
 
