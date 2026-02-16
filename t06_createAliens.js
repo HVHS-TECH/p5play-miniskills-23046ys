@@ -14,9 +14,9 @@ function setup() {
 
 	const VELARRAY = [-1,1]
 
-	randNum= random(6, 8) * random(VELARRAY)
+	randNum= random(2, 8) * random(VELARRAY)
 	
-	randCoord= random(50,900)
+	
 
 	rec = new Sprite(width/2,height/2,50, 'd');
 	rec.color = '#007bff';
@@ -37,7 +37,7 @@ function makeAliens(){
 	
 	
 
-  alien = new Sprite(randCoord,randCoord,10,10, 'd');
+  alien = new Sprite(random(50,2000),random(50,900),10,10, 'd');
 
   alien.vel.x = randNum;
 
