@@ -21,11 +21,11 @@ function setup() {
 /*******************************************************/
 function draw() {
 	background('ccc'); 
-	rec.moveTowards(mouseX, mouseY, 1);
+	
 
-if (mouse.presses()) {
+if (mouse.pressing()) {
 
-rec.moveTo(50, 50, 1);
+rec.moveTowards(mouseX, mouseY, 0.01);
 
 }
 }
